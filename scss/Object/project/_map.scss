@@ -1,0 +1,85 @@
+.p-map {
+  position: relative;
+  z-index: 1;
+  height: 69rem;
+  padding: 4rem 0 5rem;
+  margin-top: 4.8rem;
+  overflow: hidden;
+
+  @include medium {
+    height: 41.5rem;
+  }
+
+  //Google mapの画像
+  iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  }
+
+  //薄いレイアー
+  &__layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    //濃いレイアー
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 60%;
+      background-color: rgba(0, 0, 0, 0.4);
+
+      @include medium {
+        height: 100%;
+      }
+    }
+  }
+
+  &__desc {
+    position: relative;
+    z-index: 20;
+    height: 99%;  //100%にするとテキスト（dd）がスマホサイズで中途半端に表示される
+    padding: 0 4rem;
+    overflow: hidden;
+  }
+
+  &__ttl {
+    padding-bottom: 4rem;
+    font-family: $m-plus;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $white;
+
+    //タイトル下にある白線
+    &::after {
+      position: absolute;
+      top: 6rem;
+      left: 4rem;
+      content: "";
+      width: 7rem;
+      height: 0.2rem;
+      background-color: $white;
+    }
+  }
+
+  &__text {
+    /* height: 90%; */ 
+    font-family: $m-plus;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.4;
+    color: $white;
+    overflow: hidden;
+  }
+}

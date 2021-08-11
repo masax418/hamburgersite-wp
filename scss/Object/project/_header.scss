@@ -1,0 +1,15 @@
+.p-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__ttl {
+    padding-top: 4rem;
+    font-family: $roboto;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.325;
+    color:#707070;
+  }
+}

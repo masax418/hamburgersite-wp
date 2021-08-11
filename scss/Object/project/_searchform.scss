@@ -1,0 +1,29 @@
+.p-searchform {
+  display: flex;
+  padding: 4rem 0;
+  width: calc(100% - 55px);
+  
+  &__keyword {
+    width: 75%;
+    height: 4.6rem;
+    background-color: $white;
+    border: solid 1px #707070;
+    border-radius: 1rem;
+    padding-left: 1.6rem;
+    margin-right: 1.2rem;
+    opacity: 0.8;
+  }
+
+  &__submit {
+    width: 25%;
+    height: 4.6rem;
+    background: linear-gradient(#F2EDE9 ,#DED8D3);
+    border: solid 1px #707070;
+    border-radius: 1rem;
+    font-family: $m-plus;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #707070;
+  }
+}

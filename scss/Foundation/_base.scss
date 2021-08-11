@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;/* デフォルトの文字サイズ 1rem=10px(font-sizeは16pxの62.5%の) */
+  /* font-size: calc( 1000vw / 375 );  */
+}
+
+body {
+  font-size: 1.6rem; /* ＝16px */
+
+  //サイドバーが出てきたときのモーダルの役目
+  &::before {
+    content: "";
+    background:rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0; //普段は非表示にしておく
+    transition: all 0.3s; //ゆっくりfadeIn
+    pointer-events: none;
+  }
+
+  //Menuボタン（スマホ,タブレット表示の時）を押したら
+  &.is-open {
+    position: fixed;   //画面固定
+    overflow: hidden; //スクロールバーの非表示
+
+    &::before {
+      opacity: 1 //モーダルを表示
+    }
+
+  }
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}

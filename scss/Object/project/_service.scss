@@ -1,0 +1,88 @@
+.p-service {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include medium {
+    flex-direction: row;
+  }
+
+  &__item {
+    width: calc(100% - 40px);
+    height: 64.2rem;
+    margin:2rem 2rem 0 2rem;
+    position: relative;
+
+    @include medium {
+      margin: 4rem 4rem 0 4rem;
+    }
+
+    &--takeout {
+      background-image: url(/images/eyecatch/front_tekeout.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--eatin {
+      background-image: url(/images/eyecatch/front_eatin.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__ttl {
+    position: absolute;
+    top: 1.1rem;
+    left: 1rem;
+    font-family: $roboto;
+    font-size: 4.1rem;
+    /* @include font-vw(41); */
+    font-weight: bold;
+    line-height: 1.3;
+    color: $white;
+
+    &::after {
+      position: absolute;
+      top: 6.6rem;
+      left: 0.35rem;
+      content: "";
+      width: 3.4rem;
+      height: 0.5rem;
+      background-color: $white;
+    }
+  }
+
+  &__desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    dl {
+      width: calc(100% - 30px);
+      margin: 0 auto 1rem;
+      padding: 2rem 1rem;
+      background-color: $white;
+      opacity: 0.8;
+    }
+
+    dt {
+      padding-bottom: 2rem;
+      font-family: $m-plus;
+      font-size: 2.2rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: #3C2A10;
+    }
+
+    dd {
+      padding-bottom: 2.8rem;
+      font-family: $m-plus;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: #3C2A10;
+    }
+  }
+}

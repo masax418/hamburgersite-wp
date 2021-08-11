@@ -1,0 +1,30 @@
+//メディアクエリ
+  @mixin medium {
+    @media (min-width:$md) {
+      @content;
+    }
+  }
+
+  @mixin large {
+    @media (min-width:$lg) {
+      @content;
+    }
+  }
+
+/* //pxをvwに変換するfunction
+@function _get_vw($size, $viewport: 375) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+//フォント用のmixin
+@mixin font-vw($font_size: 10, $viewsize: 375) {
+  font-size: $font_size * 1px;
+  font-size: _get_vw($font_size, $viewsize);
+} */
+
+/* // rem値をvw値に変換する
+@function remToVw($remValue) {
+  $remVal: (($remValue * 10) / 1rem);
+  @return (($remVal / ($spBreakPoint / 1px)) * 100) + vw;
+  } */
