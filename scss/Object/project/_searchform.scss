@@ -1,16 +1,20 @@
 .p-searchform {
   display: flex;
   padding: 4rem 0;
-  width: calc(100% - 55px);
+  width: calc(100% - 20%);
+
+  @include medium {
+    width: calc(100% - 35%);
+  }
   
   &__keyword {
-    width: 75%;
+    width: 72%;
     height: 4.6rem;
     background-color: $white;
     border: solid 1px #707070;
     border-radius: 1rem;
     padding-left: 1.6rem;
-    margin-right: 1.2rem;
+    margin-right: 3%;
     opacity: 0.8;
   }
 

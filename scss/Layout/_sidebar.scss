@@ -18,4 +18,9 @@
     }
   }
 
+  @include large {
+    position: static; //position解除
+    width: 100%;
+  }
+
 }

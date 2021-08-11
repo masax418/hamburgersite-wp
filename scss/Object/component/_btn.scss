@@ -11,6 +11,11 @@
 
     @include medium {
       right: 2.6rem;
+      font-size: 3.4rem;
+    }
+
+    @include large {
+      display: none; //非表示にする
     }
   }
 
@@ -42,6 +47,10 @@
       height: 0.5rem;
       transform:rotate(-45deg);//反時計回りに45度回転
       background-color:#707070;
+    }
+
+    @include large {
+      display: none; //非表示にする
     }
   }
 }

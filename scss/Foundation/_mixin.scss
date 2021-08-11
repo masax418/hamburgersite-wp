@@ -17,13 +17,16 @@
   @return $rate * $size * 1vw;
 }
 
-//フォント用のmixin
+//フォント用のmixin サービスエリアのタイトルで実験
 @mixin font-vw($font_size: 10, $viewsize: 375) {
   font-size: $font_size * 1px;
   font-size: _get_vw($font_size, $viewsize);
 } */
 
-/* // rem値をvw値に変換する
+
+
+
+/* // rem値をvw値に変換する プロパティにどのような式で指定すれば良いか分からない
 @function remToVw($remValue) {
   $remVal: (($remValue * 10) / 1rem);
   @return (($remVal / ($spBreakPoint / 1px)) * 100) + vw;

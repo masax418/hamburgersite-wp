@@ -6,6 +6,8 @@ html {
 body {
   font-size: 1.6rem; /* ＝16px */
 
+/*   min-width: 32rem; 指定したら良いのか調べる  */
+
   //サイドバーが出てきたときのモーダルの役目
   &::before {
     content: "";

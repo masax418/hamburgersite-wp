@@ -3,11 +3,12 @@
   z-index: 1;
   height: 69rem;
   padding: 4rem 0 5rem;
-  margin-top: 4.8rem;
+  margin-top: 5rem;
   overflow: hidden;
 
   @include medium {
-    height: 41.5rem;
+    height: 41.5rem; 
+    margin-top: 0;
   }
 
   //Google mapの画像

@@ -1,21 +1,27 @@
 .p-service {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; //縦並び
+  align-items: center;  //縦方向中央揃え
+  justify-content: center; //水平方向中央揃え
 
   @include medium {
-    flex-direction: row;
+    flex-direction: row; //画像を横並びにする
+    padding: 4%;
+    /* padding: 4rem; */
   }
 
   &__item {
+    position: relative;
     width: calc(100% - 40px);
     height: 64.2rem;
-    margin:2rem 2rem 0 2rem;
-    position: relative;
+    /* margin:5% 5% 0 5%; */
+    margin-top: 2rem;
 
     @include medium {
-      margin: 4rem 4rem 0 4rem;
+      width: calc(100% - 61px); //効いてない？
+      height: 68.1rem;
+      margin-top: 0; //タブレット表示から親要素のpaddingで余白調整（横並びになったら横の余白が消えたため）。widthの指定が怪しい
     }
 
     &--takeout {
@@ -30,6 +36,10 @@
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include medium {
+        margin-left: 5%; //隣り合っているtakeout画像の余白余白調整 (5％=4rem相当)
+      }
     }
   }
 
@@ -39,10 +49,14 @@
     left: 1rem;
     font-family: $roboto;
     font-size: 4.1rem;
-    /* @include font-vw(41); */
+    /* @include font-vw(41); */  //文字サイズ可変対応実験用
     font-weight: bold;
     line-height: 1.3;
     color: $white;
+
+    @include medium {
+      font-size: 4.4rem;
+    }
 
     &::after {
       position: absolute;
@@ -75,6 +89,10 @@
       font-weight: bold;
       line-height: 1.5;
       color: #3C2A10;
+
+      @include medium {
+        font-size: 2.4rem;
+      }
     }
 
     dd {
