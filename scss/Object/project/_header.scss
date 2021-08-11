@@ -4,6 +4,12 @@
   flex-direction: column;
   align-items: center;
 
+  @include large {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 0;  //余白増やすことで高さ調整
+  }
+
   &__ttl {
     padding-top: 4rem;
     font-family: $roboto;
@@ -11,5 +17,12 @@
     font-weight: bold;
     line-height: 1.325;
     color:#707070;
+
+    @include large {
+      padding-top: 0; //余白解除
+      font-size: 6.4rem;
+      margin-left: 4%; //余白調整
+    }
   }
+
 }

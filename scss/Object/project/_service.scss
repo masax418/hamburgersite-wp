@@ -24,6 +24,11 @@
       margin-top: 0; //タブレット表示から親要素のpaddingで余白調整（横並びになったら横の余白が消えたため）。widthの指定が怪しい
     }
 
+    @include large {
+      width: 44%;
+      height: 119.6rem;
+    }
+
     &--takeout {
       background-image: url(/images/eyecatch/front_tekeout.jpg);
       background-position: center center;
@@ -58,6 +63,10 @@
       font-size: 4.4rem;
     }
 
+    @include large {
+      font-size: 8rem;
+    }
+
     &::after {
       position: absolute;
       top: 6.6rem;
@@ -66,6 +75,12 @@
       width: 3.4rem;
       height: 0.5rem;
       background-color: $white;
+
+      @include large {
+        top: 12rem;
+        left: 1rem;
+        width: 7rem;
+      }
     }
   }
 
@@ -80,6 +95,10 @@
       padding: 2rem 1rem;
       background-color: $white;
       opacity: 0.8;
+
+      @include large {
+        margin: 0 auto 2rem;
+      }
     }
 
     dt {

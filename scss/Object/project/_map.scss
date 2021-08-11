@@ -11,6 +11,10 @@
     margin-top: 0;
   }
 
+  @include large {
+    height: 64.9rem;
+  }
+
   //Google mapの画像
   iframe {
   position: absolute;
@@ -42,6 +46,10 @@
 
       @include medium {
         height: 100%;
+      }
+
+      @include large {
+        width: 60%;
       }
     }
   }

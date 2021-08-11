@@ -6,6 +6,11 @@
   @include medium {
     width: calc(100% - 35%);
   }
+
+  @include large {
+    width: calc(100% - 65%);
+    margin-right: 2%;
+  }
   
   &__keyword {
     width: 72%;

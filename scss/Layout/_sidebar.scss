@@ -21,6 +21,7 @@
   @include large {
     position: static; //position解除
     width: 100%;
+    height: auto;  //指定しないと下まで色がつかない
   }
 
 }
