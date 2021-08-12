@@ -400,6 +400,23 @@ Layout
   left: 100%;
   height: 100vh;
   background-color: #F2EDE9;
+  padding-top: 8.2rem;
+}
+
+.l-sidebar__ttl {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 1.3;
+  color: #707070;
+  padding-left: 4.6rem;
+}
+
+@media (min-width: 1025px) {
+  .l-sidebar__ttl {
+    display: block;
+  }
 }
 
 .l-sidebar.is-open {
@@ -410,14 +427,14 @@ Layout
   transition: all 0.3s linear;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .l-sidebar.is-open {
     left: 56%;
     width: 44%;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .l-sidebar {
     position: static;
     width: 100%;
@@ -430,7 +447,7 @@ Layout
   background-color: #9D8670;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .l-wrap {
     display: grid;
     grid-template-columns: 1fr 19%;
@@ -463,14 +480,14 @@ Object:component
   color: #707070;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .c-btn--menu {
     right: 2.6rem;
     font-size: 3.4rem;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .c-btn--menu {
     display: none;
   }
@@ -507,7 +524,7 @@ Object:component
   background-color: #707070;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .c-btn--close {
     display: none;
   }
@@ -530,7 +547,7 @@ Object:project
   align-items: center;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-header {
     flex-direction: row;
     justify-content: space-between;
@@ -547,7 +564,7 @@ Object:project
   color: #707070;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-header__ttl {
     padding-top: 0;
     font-size: 6.4rem;
@@ -561,13 +578,13 @@ Object:project
   width: calc(100% - 20%);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-searchform {
     width: calc(100% - 35%);
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-searchform {
     width: calc(100% - 65%);
     margin-right: 2%;
@@ -604,7 +621,7 @@ Object:project
   position: relative;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-hero {
     height: 53rem;
   }
@@ -621,13 +638,13 @@ Object:project
   color: #fff;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-hero__ttl {
     left: 10%;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-hero__ttl {
     top: 43%;
     font-size: 4rem;
@@ -642,7 +659,7 @@ Object:project
   justify-content: center;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-service {
     flex-direction: row;
     padding: 4%;
@@ -658,7 +675,7 @@ Object:project
   margin-top: 2rem;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-service__item {
     width: calc(100% - 61px);
     height: 68.1rem;
@@ -666,7 +683,7 @@ Object:project
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-service__item {
     width: 44%;
     height: 119.6rem;
@@ -687,7 +704,7 @@ Object:project
   background-size: cover;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-service__item--eatin {
     margin-left: 5%;
   }
@@ -705,15 +722,17 @@ Object:project
   color: #fff;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-service__ttl {
     font-size: 4.4rem;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-service__ttl {
-    font-size: 8rem;
+    font-size: 4.3vw;
+    top: 2rem;
+    left: 2rem;
   }
 }
 
@@ -727,11 +746,11 @@ Object:project
   background-color: #fff;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-service__ttl::after {
-    top: 12rem;
-    left: 1rem;
-    width: 7rem;
+    top: 7vw;
+    left: 0.5vw;
+    width: 3.5vw;
   }
 }
 
@@ -749,7 +768,7 @@ Object:project
   opacity: 0.8;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-service__desc dl {
     margin: 0 auto 2rem;
   }
@@ -764,7 +783,7 @@ Object:project
   color: #3C2A10;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-service__desc dt {
     font-size: 2.4rem;
   }
@@ -787,16 +806,17 @@ Object:project
   overflow: hidden;
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-map {
     height: 41.5rem;
     margin-top: 0;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-map {
     height: 64.9rem;
+    padding: 0;
   }
 }
 
@@ -828,13 +848,13 @@ Object:project
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .p-map__layer::after {
     height: 100%;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
   .p-map__layer::after {
     width: 60%;
   }
@@ -848,6 +868,14 @@ Object:project
   overflow: hidden;
 }
 
+@media (min-width: 1025px) {
+  .p-map__desc {
+    width: 60%;
+    padding: 0 8%;
+    height: 100%;
+  }
+}
+
 .p-map__ttl {
   padding-bottom: 4rem;
   font-family: "M PLUS 1p", sans-serif;
@@ -855,6 +883,13 @@ Object:project
   font-weight: bold;
   line-height: 1.5;
   color: #fff;
+}
+
+@media (min-width: 1025px) {
+  .p-map__ttl {
+    padding: 8rem 0 10rem;
+    font-size: 2.4vw;
+  }
 }
 
 .p-map__ttl::after {
@@ -867,6 +902,13 @@ Object:project
   background-color: #fff;
 }
 
+@media (min-width: 1025px) {
+  .p-map__ttl::after {
+    top: 28%;
+    left: 14%;
+  }
+}
+
 .p-map__text {
   /* height: 90%; */
   font-family: "M PLUS 1p", sans-serif;
@@ -875,6 +917,13 @@ Object:project
   line-height: 2.4;
   color: #fff;
   overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  .p-map__text {
+    height: 60%;
+    font-size: 1.6rem;
+  }
 }
 
 .p-footer {
@@ -913,7 +962,7 @@ Object:project
 }
 
 .p-menulist {
-  padding-top: 15rem;
+  padding-top: 8.2rem;
   font-family: "M PLUS 1p", sans-serif;
   color: #707070;
 }
@@ -930,7 +979,14 @@ Object:project
 }
 
 .p-menulist__sub {
-  padding: 4rem 0 4rem 6rem;
+  padding: 4rem 0 4rem 6.5rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 1025px) {
+  .p-menulist__sub {
+    font-size: 1.2vw;
+  }
 }
 
 .p-menulist__subitem {
