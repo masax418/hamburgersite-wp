@@ -1,5 +1,5 @@
 .p-menulist {
-  padding-top: 15rem;
+  padding-top: 8.2rem;
   font-family: $m-plus;
   color: #707070;
 
@@ -15,7 +15,12 @@
   }
 
   &__sub {
-    padding: 4rem 0 4rem 6rem;
+    padding: 4rem 0 4rem 6.5rem;
+    font-size: 2rem;
+
+    @include large {
+      font-size: 1.2vw;
+    }
   }
 
   &__subitem {
