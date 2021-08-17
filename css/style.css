@@ -619,7 +619,13 @@ Object:component
   font-weight: bold;
   line-height: 1.5;
   color: #fff;
-  white-space: nowrap;
+  /* white-space: nowrap; //仕方なく・・・ */
+}
+
+@media (min-width: 600px) {
+  .c-card__caption h3 {
+    font-size: 3vw;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -1238,6 +1244,126 @@ Object:project
 @media (min-width: 1025px) {
   .p-archive__menucard {
     padding-top: 7rem;
+  }
+}
+
+.p-pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  color: #707070;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation {
+    margin-top: 10.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-pagenation {
+    margin-top: 15rem;
+  }
+}
+
+.p-pagenation > p {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2;
+  padding-right: 2rem;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation > p {
+    display: block;
+    white-space: nowrap;
+  }
+}
+
+.p-pagenation span {
+  font-size: 3rem;
+}
+
+.p-pagenation__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation__list {
+    width: auto;
+    justify-content: center;
+  }
+}
+
+.p-pagenation__list__item {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #707070;
+}
+
+.p-pagenation__list__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-pagenation__list__item p {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.p-pagenation__list__item p:first-of-type {
+  margin-left: 0.8rem;
+}
+
+.p-pagenation__list__item p:last-of-type {
+  margin-right: 0.8rem;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation__list__item p {
+    display: none;
+  }
+}
+
+.p-pagenation__list__item:first-of-type, .p-pagenation__list__item:last-of-type {
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.p-pagenation__list__item:not(:first-of-type):not(:last-of-type) {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation__list__item:not(:first-of-type):not(:last-of-type) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.p-pagenation__list__item:hover:not(:first-of-type):not(:last-of-type) {
+  background-color: #3C2B1C;
+  color: #fff;
+}
+
+.p-pagenation__list__item:not(:first-of-type) {
+  margin-left: 0;
+}
+
+@media (min-width: 600px) {
+  .p-pagenation__list__item:not(:first-of-type) {
+    margin-left: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
