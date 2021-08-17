@@ -52,6 +52,12 @@
     }
   }
 
+  &--single {
+    width: 100%;
+    height: 22.5rem;
+    position: relative;
+  }
+
   &__ttl {
     position: absolute;
     top:40%;
