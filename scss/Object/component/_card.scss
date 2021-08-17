@@ -1,0 +1,69 @@
+.c-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $m-plus;
+
+  @include medium {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+
+  //画像と画像の間の余白（画像が3枚ではないときは・・・）
+  &:nth-of-type(2) {
+    margin: 2rem 0;
+
+    @include large {
+      margin: 3rem 0;
+    }
+  }
+
+  img {
+    @include medium {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__caption {
+    background-color: $card-bg;
+    padding: 3rem 1.5rem 4.4rem;
+
+    @include large {
+      padding: 5rem 6rem 6rem;
+    }
+
+    h3 {
+      font-size: 2rem; //2vwしたら画面幅600px付近でh4よりも小さくなってしまうので最小値を指定する必要がある
+      font-weight: bold;
+      line-height: 1.5;
+      color: $white;
+      white-space: nowrap; //仕方なく・・・
+
+      @include large {
+        font-size: 2vw;
+      }
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.4;
+      color: $white;
+      padding-top: 2.4rem;
+
+      @include large {
+        font-size: 1.8vw;
+        padding-top: 4.7rem;
+      }
+    }
+
+    p {
+      font-size: 1.6rem;
+      line-height: 1.4;
+      color: $white;
+      padding-top: 1rem;
+    }
+  }
+}
