@@ -7,6 +7,51 @@
     height: 53rem;
   }
 
+  &--archive {
+    width: 100%;
+    height: 28.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include medium {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    @include large {
+      height: 24vh;  //（連立方程式100vh=2605px Xvh=239pxを計算） 
+      min-height: 24rem;
+    }
+
+    /* 画像のレイアー */
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: $black;
+      opacity: 0.5;
+    }
+
+    p {
+      z-index: 10; //レイアーより前へ
+      margin-left: 3.7rem;
+      font-family: $m-plus;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.3;
+      color: $white;
+
+      @include medium {
+        margin-left: 2rem;
+      }
+    }
+  }
+
   &__ttl {
     position: absolute;
     top:40%;
@@ -24,6 +69,21 @@
     @include large {
       top: 43%;
       font-size: 4rem;
+    }
+
+    &--archive {
+      z-index: 10;  //レイアーより前へ
+      margin-left: 3.7rem;
+      font-family: $roboto;
+      font-size: 3.6rem;
+      font-weight: bold;
+      line-height: 1.3;
+      color: $white;
+
+      @include medium {
+        margin-left: 8.6rem;
+        font-size: 6rem;
+      }
     }
 
   }
