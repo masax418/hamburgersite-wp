@@ -1,0 +1,111 @@
+.p-pagenation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  color: #707070;
+
+  @include medium {
+    margin-top: 10.5rem;
+  }
+
+  @include large {
+    margin-top: 15rem;
+  }
+
+  > p {
+    display: none;
+    font-family: $roboto;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2;
+    padding-right: 2rem;
+
+    @include medium {
+      display: block;
+      white-space: nowrap;
+    }
+  }
+
+  span {
+    font-size: 3rem;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include medium {
+      width: auto;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 3.5rem;
+      height: 3.5rem;
+      border: 1px solid #707070;
+
+      //前へ　次へ　矢印のリンク
+      a {
+        display: flex;//リンク範囲が広がらない・・（display:block;指定できない）
+        justify-content: center;
+        align-items: center;
+      }
+
+      //「前へ」と「次へ」
+      p {
+        font-family: $m-plus;
+
+        &:first-of-type {
+          margin-left: 0.8rem;
+        }
+
+        &:last-of-type {
+          margin-right: 0.8rem;
+        }
+
+        @include medium {
+          display: none;
+        }
+      }
+
+      //「前へ」と「次へ」の外枠非表示
+      &:first-of-type,&:last-of-type {
+        border: none;
+        width: auto;
+        height: auto;
+      }
+
+      //「前へ」と「次へ」以外非表示&font-family別に指定
+      &:not(:first-of-type):not(:last-of-type) {
+        display: none;
+        font-family: $roboto;
+        font-weight: bold;
+
+        @include medium {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      //マウスオーバーしたら色変わる
+      &:hover:not(:first-of-type):not(:last-of-type) {
+        background-color: #3C2B1C;
+        color: $white;
+      }
+
+      //ページ数同士の余白指定
+      &:not(:first-of-type) {
+        margin-left: 0;
+
+        @include medium {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
