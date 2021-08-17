@@ -28,9 +28,9 @@ RaiseTech/WP副業コース/最終課題　ハンバーガーのお店のサイ�
 
 環境構築  1h
 
-マークアップ  3h30m
+マークアップ  4h30m
 
-Sass  34h
+Sass  44h
 
 jQuery  1h
 
