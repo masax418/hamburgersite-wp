@@ -7,7 +7,7 @@
   <!-- メディアクエリ -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- タブ題名 -->
-  <title>hamburger site | フロントページ</title>
+  <title>hamburger site | アーカイブページ</title>
   <!-- css読込み -->
   <link rel="stylesheet" href="./css/style.css">
   <!-- fontawesome -->
@@ -43,51 +43,82 @@
     <main class="l-main">
 
       <!-- メインヴィジュアルエリア -->
-      <div class="p-hero c-mainvisual--frontpage">
-        <h2 class="p-hero__ttl">Menu:</h2>
+      <div class="p-hero--archive c-mainvisual--archive">
+        <h2 class="p-hero__ttl--archive">Menu:</h2>
+        <p>チーズバーガー</p>
       </div>
 
-      <!-- サービスエリア -->
-      <div class="p-service">
-        <a href="#" class="p-service__item p-service__item--takeout">
-          <h2 class="p-service__ttl">Take Out</h2>
-          <div class="p-service__desc">
-            <dl>
-              <dt>Take OUT</dt>
-              <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl>
-              <dt>Take OUT</dt>
-              <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-          </div>
-        </a>
+      <!-- アーカイブエリア -->
+      <section class="p-archive">
 
-        <a href="#" class="p-service__item p-service__item--eatin">
-          <h2 class="p-service__ttl">Eat In</h2>
-          <div class="p-service__desc">
-            <dl>
-              <dt>Take OUT</dt>
-              <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-            <dl>
-              <dt>Take OUT</dt>
-              <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-            </dl>
-          </div>
-        </a>
-      </div>
+      <!-- メニュー導入エリア -->
+        <article class="p-archive__intro">
+          <h2 class="p-archive__intro__ttl">小見出しが入ります</h2>
+          <p class="p-archive__intro__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </article>
 
-      <!-- マップエリア -->
-      <div class="p-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11890.205503531271!2d139.7020927775083!3d35.66247038208646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca428c01717%3A0x6d9cff4312428fd5!2sTHE%20GREAT%20BURGER!5e0!3m2!1sja!2sjp!4v1626861556443!5m2!1sja!2sjp" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-        <div class="p-map__layer"></div>
-        <div class="p-map__desc">
-          <h2 class="p-map__ttl">見出しが入ります</h2>
-          <p class="p-map__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-        </div>
-      </div>
+      <!-- メニューカードエリア -->
+        <article class="p-archive__menucard">
+          <figure class="c-card">
+            <img src="/images/eyecatch/card.jpg" alt="ハンバーガーの画像">
+            <figcaption class="c-card__caption">
+              <h3>チーズバーガー</h3>
+              <h4>小見出しが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <button class="c-btn--more"><a href="#">詳しく見る</a></button>
+            </figcaption>
+          </figure>
+
+          <figure class="c-card">
+            <img src="/images/eyecatch/card.jpg" alt="ハンバーガーの画像">
+            <figcaption class="c-card__caption">
+              <h3>ダブルチーズバーガー</h3>
+              <h4>小見出しが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <button class="c-btn--more"><a href="#">詳しく見る</a></button>
+            </figcaption>
+          </figure>
+
+          <figure class="c-card">
+            <img src="/images/eyecatch/card.jpg" alt="ハンバーガーの画像">
+            <figcaption class="c-card__caption">
+              <h3>スペシャルチーズバーガー</h3>
+              <h4>小見出しが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <button class="c-btn--more"><a href="#">詳しく見る</a></button>
+            </figcaption>
+          </figure>
+        </article>
+
+      </section>
+
+      <!-- ページネーションエリア -->
+      <nav class="p-pagenation">
+        <p>page 1/10</p>
+        <ul class="p-pagenation__list">
+            <li class="p-pagenation__list__item">
+                <a class="page-link" href="#" aria-label="前のページに戻る">
+                    <span aria-hidden="true">&laquo;</span>
+                    前へ
+                </a>
+            </li>
+            <li class="p-pagenation__list__item"><a href="#">1</a></li>
+            <li class="p-pagenation__list__item"><a href="#">2</a></li>
+            <li class="p-pagenation__list__item"><a href="#">3</a></li>
+            <li class="p-pagenation__list__item"><a href="#">4</a></li>
+            <li class="p-pagenation__list__item"><a href="#">5</a></li>
+            <li class="p-pagenation__list__item"><a href="#">6</a></li>
+            <li class="p-pagenation__list__item"><a href="#">7</a></li>
+            <li class="p-pagenation__list__item"><a href="#">8</a></li>
+            <li class="p-pagenation__list__item"><a href="#">9</a></li>
+            <li class="p-pagenation__list__item">
+                <a class="page-link" href="#" aria-label="次のページに進む">
+                    次へ
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     </main>
 
