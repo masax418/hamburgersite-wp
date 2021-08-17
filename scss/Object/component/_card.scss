@@ -39,7 +39,11 @@
       font-weight: bold;
       line-height: 1.5;
       color: $white;
-      white-space: nowrap; //仕方なく・・・
+      /* white-space: nowrap; //仕方なく・・・ */
+
+      @include medium {
+        font-size: 3vw;
+      }
 
       @include large {
         font-size: 2vw;
