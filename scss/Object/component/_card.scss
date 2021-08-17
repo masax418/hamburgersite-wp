@@ -11,7 +11,15 @@
   }
 
   //画像と画像の間の余白（画像が3枚ではないときは・・・）
-  &:nth-of-type(2) {
+/*   &:nth-of-type(2) {
+    margin: 2rem 0;
+
+    @include large {
+      margin: 3rem 0;
+    }
+  } */
+
+  &:not(:first-of-type) {
     margin: 2rem 0;
 
     @include large {
