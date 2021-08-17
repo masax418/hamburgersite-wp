@@ -53,4 +53,23 @@
       display: none; //非表示にする
     }
   }
+
+  &--more {
+    width: 16.3rem;
+    padding: 1rem 0;
+    background-color: $white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #707070;
+    border-radius: 3.5rem;
+    display: block;
+    margin:auto;
+    margin-top: 4rem;
+
+    @include large {
+      width: 52%;
+      padding: 2.5rem 0;
+      margin-top: 6rem;
+    }
+  }
 }
