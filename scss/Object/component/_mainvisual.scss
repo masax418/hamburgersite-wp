@@ -16,4 +16,11 @@
       background-position: center;
     }
   }
+
+  &--single {
+    background-image: url(/images/mainvisual/mainvisual-single.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
