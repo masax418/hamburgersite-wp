@@ -1,0 +1,14 @@
+.l-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+
+  @include medium {
+    padding: 0 4rem;
+  }
+
+  @include large {
+    padding: 0 5%;
+  }
+}
