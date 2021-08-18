@@ -1,0 +1,11 @@
+.p-menucard {
+  padding-top: 2rem;
+
+  @include medium {
+    padding-top: 3.7rem;
+  }
+
+  @include large {
+    padding-top: 7rem;
+  }
+}
