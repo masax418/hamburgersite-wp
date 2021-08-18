@@ -12,7 +12,8 @@ Layout
 @import "./Layout/main";
 @import "./Layout/sidebar";
 @import "./Layout/footer";
-@import "./Layout/wrap";
+@import "./Layout/grid";
+@import "./Layout/container";
 /* ----------------------------------------------------------------------------------------
 Object:component
 ----------------------------------------------------------------------------------------*/
@@ -29,5 +30,7 @@ Object:project
 @import "./Object/project/map";
 @import "./Object/project/footer";
 @import "./Object/project/menulist";
-@import "./Object/project/archive";
+@import "./Object/project/intro";
+@import "./Object/project/menucard";
 @import "./Object/project/pagenation";
+@import "./Object/project/blockquote";
