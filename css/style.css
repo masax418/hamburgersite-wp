@@ -1463,4 +1463,134 @@ Object:project
   padding-left: 5px;
   text-decoration: underline;
 }
+
+.p-eyecatch {
+  margin-top: 3rem;
+  font-family: "M PLUS 1p", sans-serif;
+  line-height: 1.4;
+  color: #3C2A10;
+}
+
+.p-eyecatch__top {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.p-eyecatch__list {
+  margin-top: 3rem;
+}
+
+.p-eyecatch__list__item {
+  overflow: hidden;
+  height: 32vh;
+}
+
+@media (min-width: 600px) {
+  .p-eyecatch__list__item {
+    height: 42vh;
+  }
+}
+
+.p-eyecatch__list__item figure {
+  display: flex;
+  /*         flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; */
+}
+
+.p-eyecatch__list__item figure:first-child {
+  margin-bottom: 3rem;
+}
+
+.p-eyecatch__list__item img {
+  width: 42%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.p-eyecatch__list__item img:first-child {
+  margin-right: 3%;
+}
+
+.p-eyecatch__list__item img:last-child {
+  margin-left: 3%;
+}
+
+.p-eyecatch__list__item:last-child {
+  margin-top: 3rem;
+}
+
+.p-eyecatch__bottom {
+  display: block;
+  width: 44%;
+  margin: 3rem auto 0 auto;
+  margin-top: 3rem;
+}
+
+@media (min-width: 600px) {
+  .p-eyecatch__bottom {
+    width: 70%;
+  }
+}
+
+.p-eyecatch__gallery {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .p-eyecatch__gallery {
+    margin-top: 24rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-eyecatch__gallery {
+    margin-top: 6rem;
+  }
+}
+
+.p-eyecatch__gallery img {
+  width: 100%;
+}
+
+.p-eyecatch__gallery img:not(:first-child) {
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .p-eyecatch__gallery img:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .p-eyecatch__gallery img {
+    margin: 0 1.5rem 2rem 0;
+    width: calc(50% - 1.5rem / 2);
+  }
+  .p-eyecatch__gallery img:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-eyecatch__gallery img {
+    margin: 0 2rem 2rem 0;
+    width: calc(33.3% - 4rem / 3);
+  }
+  .p-eyecatch__gallery img:nth-child(2n) {
+    margin-right: 2rem;
+  }
+  .p-eyecatch__gallery img:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */
