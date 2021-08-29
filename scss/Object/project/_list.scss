@@ -1,0 +1,27 @@
+.p-list {
+  font-family: $m-plus;
+  line-height: 1.4;
+  color: #3C2A10;
+  margin-top: 3rem;
+
+  @include medium {
+    margin-top: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include large {
+    padding-left: 4%;
+  }
+
+  ol li ol  {
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  & > ul {
+    margin-top: 6rem;
+  }
+
+  ul li ul {
+    padding: 2rem 0 2rem 2rem;
+  }
+}
