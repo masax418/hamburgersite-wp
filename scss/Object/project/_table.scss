@@ -1,0 +1,24 @@
+.p-table {
+  font-family: $m-plus;
+  line-height: 1.4;
+  color: #3C2A10;
+  background-color: $white;
+  margin: 3rem 0;
+  border-collapse: collapse;
+
+  @include medium {
+    margin: 6rem 0;
+  }
+
+  td {
+    border: 1px solid #707070;
+
+    &:nth-child(odd) {
+      padding: 3rem 4rem 3rem 3rem;
+    }
+
+    &:nth-child(even) {
+      padding: 3rem 10rem 3rem 3rem;
+    }
+  }
+}
