@@ -1,0 +1,16 @@
+.p-code {
+  background-color: $code-bg;
+  margin-top: 3rem;
+  padding: 2rem 0;
+
+  @include medium {
+    margin-top: 6rem;
+  }
+
+  code {
+    font-family: $m-plus;
+    line-height: 1.4;
+    color: #3C2A10;
+  }
+
+}
