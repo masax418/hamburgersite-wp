@@ -590,27 +590,34 @@ Object:component
 }
 
 .c-mainvisual--front {
-  background-image: url(/images/mainvisual/mainvisual-pc.jpg);
+  background-image: url(/images/mainvisual/mainvisual-front.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .c-mainvisual--archive {
-  background-image: url(/images/mainvisual/page-title_arcive.jpg);
+  background-image: url(/images/mainvisual/page-title_archive.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 1025px) {
   .c-mainvisual--archive {
-    background-image: url(/images/mainvisual/page-title_arcive@2x.jpg);
+    background-image: url(/images/mainvisual/page-title_archive@2x.jpg);
     background-position: center;
   }
 }
 
 .c-mainvisual--single {
   background-image: url(/images/mainvisual/mainvisual-single.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-mainvisual--page {
+  background-image: url(/images/mainvisual/mainvisual-page.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
