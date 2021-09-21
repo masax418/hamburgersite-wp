@@ -1,31 +1,31 @@
 .c-mainvisual {
   &--front {
-    background-image: url(/images/mainvisual/mainvisual-front.jpg);
+    background-image: url(../images/mainvisual/mainvisual-front.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--archive {
-    background-image: url(/images/mainvisual/page-title_archive.jpg);
+    background-image: url(../images/mainvisual/page-title_archive.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     @include large {
-      background-image: url(/images/mainvisual/page-title_archive@2x.jpg);
+      background-image: url(../images/mainvisual/page-title_archive@2x.jpg);
       background-position: center;
     }
   }
 
   &--single {
-    background-image: url(/images/mainvisual/mainvisual-single.jpg);
+    background-image: url(../images/mainvisual/mainvisual-single.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &--page {
-    background-image: url(/images/mainvisual/mainvisual-page.jpg);
+    background-image: url(../images/mainvisual/mainvisual-page.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
