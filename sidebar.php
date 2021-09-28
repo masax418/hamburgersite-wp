@@ -5,7 +5,7 @@
   <?php
   wp_nav_menu(array(
     'theme_location' => 'global', //メニューの位置を指定
-    'menu_class' => 'p-menulist__sub', //任意のclass名を追加
+    'menu_class' => 'p-menu', //任意のclass名を追加
     'items_wrap' => '<ul class="%2$s">%3$s</ul>', //id属性の自動付与を解除（id削除しclassは残す）
     'container' => false //不要なdivタグを削除
   ));
