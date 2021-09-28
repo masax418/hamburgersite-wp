@@ -4,7 +4,7 @@
 
   <!-- メインヴィジュアルエリア -->
   <div class="p-hero--single c-mainvisual--page">
-    <h1 class="p-hero__ttl--single">ショップについて</h1>
+    <h1 class="p-hero__ttl--single"><?php the_title(); ?></h1>
   </div>
 
   <div class="l-container">
